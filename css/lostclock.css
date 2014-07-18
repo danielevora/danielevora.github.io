@@ -1,0 +1,54 @@
+
+
+.flip-clock-divider .flip-clock-label {
+ 	display: none;
+ }
+
+.flip-clock-divider.minutes {
+	display: none;
+}
+
+.flip-clock-divider.seconds .flip-clock-label {
+ 	display: none;
+}
+
+.flip-clock-dot.top {
+  display: none;
+ }
+
+.flip-clock-dot.bottom {
+  display: none;
+ }
+
+.flip-clock-wrapper{
+	margin:0;
+}
+
+.flip-clock-wrapper > ul:nth-last-of-type(-n+2) li a div div.inn {
+  color: #000;
+  text-shadow: 0 1px 2px #ccc;
+  background-color: #fff;
+}
+
+/* RED ON BLACK */
+/*.flip-clock-wrapper > ul li a div div.inn {
+  color: #EB4714;
+  text-shadow: 0 1px 2px #000;
+  background-color: #333;
+}*/
+
+/* BLACK ON RED */
+/*.flip-clock-wrapper > ul:nth-last-of-type(-n+2) li a div div.inn {
+  color: #fff;
+  text-shadow: 0 1px 2px #333;
+  background-color: #EB4714;
+}*/
+
+.flip-clock-wrapper ul li a div.down {
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  border-radius: 1px;
+}

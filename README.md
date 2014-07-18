@@ -1,4 +1,4 @@
-danielevora.github.io
-=====================
+danielevora.com
+===============
 
-My public personal github page
+global main internet home
