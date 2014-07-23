@@ -3,11 +3,46 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face {
+  font-family: 'Impact Label';
+  src: url('../fonts/ImpactLabel.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Impact Label Inverse';
+  src: url('../fonts/ImpactLabelInverse.ttf') format('truetype');
+}
 
+h1{
+	font-family: 'Impact Label Inverse';
+	transform: rotate(-3deg);
+}
 
+h2,h3,h4,h5,h6{
+	font-family: 'Impact Label';
+	transform: rotate(-3deg);
+}
 
+h1:before,h2:before,h3:before,h4:before,h5:before,h6:before,h1:after,h2:after,h3:after,h4:after,h5:after,h6:after {
+   content: "\00a0";
+}
 
+.navbar-custom{
+  background-image:-webkit-linear-gradient(top,#8a2be2 0,#4B0082 100%);
+  background-image:linear-gradient(to bottom,#8a2be2 0,#4B0082 100%);
+  background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a2be2', endColorstr='#ff4B0082', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
+}
 
+.container .jumbotron {
+	border-radius: 0;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../images/paddleboard.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 

@@ -1,0 +1,18 @@
+# Setup
+title:            Daniel Evora
+url:              http://www.danielevora.com
+shorturl:         danielevora.com
+
+author:
+  name:           'Daniel Evora'
+  url:            https://twitter.com/danielevora
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           github.com/danielevora/danielevora.github.io
+
+# This is the list of pages to incldue in the header of the website.
+pages_list:
+  About: '/about/'
+  Archive: '/archive/'

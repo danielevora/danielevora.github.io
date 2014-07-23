@@ -6,9 +6,8 @@ title: Daniel Evora
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
-    <h1>Hello, world!</h1>
+    <h1>Hello world!</h1>
     <p>Welcome to my domain.</p>
-    <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
   </div>
 </div>
 
@@ -23,19 +22,41 @@ title: Daniel Evora
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <h2>Social</h2>
-      <p></p>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/DanielEvora" data-widget-id="490988422979268608">Tweets by @DanielEvora</a>
+      <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <h2>Strava</h2>
       <iframe src="http://www.strava.com/athletes/274580/latest-rides/e566635fc026022d4f7e3277892371fc92b196e5" width="374" height="454" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
    </div>
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <h2>Spotify</h2>
       <!--<style type="text/css">#outerWidgetContainer{ height:454px; width:300px; }</style>-->
       <iframe src="https://embed.spotify.com/?uri=spotify:user:anidealover:playlist:7KAtSDO3EdwNHJqpj3tYo7&theme=white" width="374" height="454" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+    <div class="col-md-6 col-lg-4>">
+      <h2>SoundCloud</h2>
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/44171951&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <h2>Sentiments</h2>
+        <div class="row">
+    <div class="col-md-12">
+      {% for post in site.posts limit:25 %}
+        <li class="post-{{ post.category }}">
+          {% if post.external_url == nil %}
+            <a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
+          {% else %}
+            <a href="{{ post.external_url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </div>
+  </div>
     </div>
   </div>
 </div>
